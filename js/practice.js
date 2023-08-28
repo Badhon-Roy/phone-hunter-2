@@ -10,13 +10,13 @@ const displayAllPhones = (phones) => {
 
 
     const seeMoreBtn = document.getElementById("seeMore-Btn")
-    if (phones.length > 10) {
+    if (phones.length > 30) {
         seeMoreBtn.classList.remove('hidden')
     }
     else {
         seeMoreBtn.classList.add('hidden')
     }
-    phones = phones.slice(0, 10);
+    phones = phones.slice(0, 30);
 
     phones.forEach(phone => {
         const phoneCard = document.createElement('div');
